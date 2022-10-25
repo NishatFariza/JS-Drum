@@ -15,7 +15,7 @@ html{
     background-position: center center;
     background-repeat: no-repeat;
     font-size: 16px;
-    height: 100%;
+    height: 100vh;
     background-blend-mode: overlay;
    
 }
@@ -69,20 +69,6 @@ html{
         background: rgba(255, 255, 255, 0.5);
         cursor: pointer;
 }
-
-/* .playing{
-    transform: scale(1.1);
-    border-color: #ffca0a;
-    box-shadow: 0 0 1rem #ffca0a;
-
-    -webkit-box-shadow: 0 0 20px #ffca0a;
-        box-shadow: 0 0 1rem #ffca0a;
-        -webkit-transform: scale(2);
-        -moz-transform: scale(2);
-        -ms-transform: scale(2);
-        -o-transform: scale(2);
-        transform: scale(2);
-} */
 
 .playing {
     border: 5px solid #F5DA55;

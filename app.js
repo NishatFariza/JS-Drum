@@ -30,15 +30,17 @@ keys.forEach(key => key.addEventListener("transitionend", removeTransition))
 
 
 // Play music by mouse click
-keys.forEach(key => key.addEventListener("click", playByMouse))
-function playByMouse(e) {
-    const keyCode = this.getAttribute("data-key");
-    const audio = document.querySelector(`audio[data-key="${keyCode}"]`);
+keys.forEach((key) => { key.addEventListener("click", playUsingMouse) });
+
+function playUsingMouse(e) {
+    const keycode = (this.getAttribute("data-key")); 
+     const audio = document.querySelector(`audio[data-key="${keycode}"]`);
+
+    if (!audio) return; //stop the function running all together
+
     audio.currentTime = 0; // rewind to the start
     audio.play();
-    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-    key.classList.add('playing')
-
+    this.classList.add('playing')
 
 }
 
