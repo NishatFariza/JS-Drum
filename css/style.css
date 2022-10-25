@@ -15,7 +15,7 @@ html{
     background-position: center center;
     background-repeat: no-repeat;
     font-size: 16px;
-    height: 100vh;
+    height: 100%;
     background-blend-mode: overlay;
    
 }
@@ -44,10 +44,7 @@ html{
 }
 
 .keys{
-    margin: 0;
-    /* width: 100%; */
     display: flex;
-    /* min-height: 80vh; */
     justify-content: center;
     align-items: center;
 
@@ -70,7 +67,15 @@ html{
         cursor: pointer;
 }
 
-.playing {
+.playing{
+    transform: scale(1.1);
+    border-color: #ffca0a;
+    box-shadow: 0 0 1rem #ffca0a;
+
+    
+} 
+
+/* .playing {
     border: 5px solid #F5DA55;
     -webkit-box-shadow: 0 0 20px #F5DA55;
     box-shadow: 0 0 20px #F5DA55;
@@ -79,7 +84,7 @@ html{
     -ms-transform: scale(2);
     -o-transform: scale(2);
     transform: scale(2);
-}
+} */
 
 kbd{
     display: block;
